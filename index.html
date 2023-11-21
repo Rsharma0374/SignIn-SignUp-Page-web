@@ -158,6 +158,23 @@
             alert("Mobile number should be 10 digits");
             return;
         }
+        if (formData.sUserName === '') {
+            alert("Username cannot be blank")
+            return;
+        }
+        if (formData.sEmailId === '') {
+            alert("Email cannot be blank")
+            return;
+        }
+        if (formData.sPassword === '') {
+            alert("Password cannot be blank")
+            return;
+        }
+        if (formData.sGender === '') {
+            alert("Gender cannot be blank")
+            return;
+        }
+        
         console.log(formData)
 
         fetch("https://user-auth-iduw.onrender.com/user/new-user", {
