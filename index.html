@@ -12,8 +12,13 @@
 <body>
     <div class="container">
         <div class="form-box">
+            <div class="heading">
+                <h2>Password Manager</h2>
+                <p>"Where Security Meets Simplicity."</p>
+            </div>
             <h1 id="title">Sign Up</h1>
             <form>
+                
                 <div class="btn-field">
                     <button type="button" id="signupBtn">Sign Up</button>
                     <button type="button" id="signinBtn" class="disable">Sign In</button>
@@ -51,7 +56,7 @@
                     </div>
                     <p> Forgot Password? <a href="#">Click Here</a> </p>
                 </div>
-                <div class="btn-field-2">
+                <div class="btn-field-2" id="btnFieldContainer">
                     <button type="button" id="createBtn">Sign Up</button>
                     <button type="button" id="loginBtn" class="disabled">Login</button>
                 </div>
@@ -94,6 +99,7 @@
         signinBtn.classList.remove("disable");
         createButton.style.display = "none";
         loginButton.style.display = "block";
+        document.getElementById('btnFieldContainer').style.marginTop = "-100px";
     }
 
     signupBtn.onclick = function () {
@@ -105,6 +111,7 @@
         signinBtn.classList.add("disable");
         createButton.style.display = "block";
         loginButton.style.display = "none";
+        document.getElementById('btnFieldContainer').style.marginTop = "0";
     }
 
     function validateUsername() {

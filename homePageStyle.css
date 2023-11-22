@@ -13,7 +13,11 @@
     background-size: cover;
     position: relative;
 }
-
+.heading{
+    margin-bottom: 7px;
+    color: #0a0a0a;
+    position: relative;
+}
 .form-box{
     width: 90%;
     max-width: 450px;
@@ -25,12 +29,12 @@
     padding: 50px 60px 70px;
     text-align: center;
     border-radius: 15px;
-
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .form-box h1{
     font-size: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 45px;
     color: #3c00a0;
     position: relative;
 }
